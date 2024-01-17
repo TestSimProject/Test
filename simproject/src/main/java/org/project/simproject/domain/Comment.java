@@ -13,7 +13,7 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
-    @Column(name = "articleId")
+    @Column(name = "articleId", nullable = false)
     private Long articleId;
     @Column(name = "nickname")
     private String nickname;
