@@ -26,7 +26,7 @@ public class User implements UserDetails {
     private String password;
     @Column(name = "nickname", unique = true)
     private String nickname;
-    @Column(name = "articlesCount")
+    @Column(name = "articlesCount", nullable = false)
     private int articlesCount;
 
     @Override
