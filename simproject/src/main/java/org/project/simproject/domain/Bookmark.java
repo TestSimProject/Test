@@ -13,9 +13,9 @@ public class Bookmark {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
-    @Column(name = "articleId")
+    @Column(name = "articleId", nullable = false)
     private Long articleId;
-    @Column(name = "userId")
+    @Column(name = "userId", nullable = false)
     private Long userId;
 
     @Builder
