@@ -13,7 +13,7 @@ public class Bookmark {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
-    @Column(name = "articleId", nullable = false)
+    @Column(name = "articleId")
     private Long articleId;
     @Column(name = "userId", nullable = false)
     private Long userId;
