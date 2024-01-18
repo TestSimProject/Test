@@ -10,5 +10,4 @@ import java.util.Optional;
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Long> {
     Optional<Comment> findByArticleId(Long articleId);
-    List<Comment> findByNicknameContains(String nickname);
 }
